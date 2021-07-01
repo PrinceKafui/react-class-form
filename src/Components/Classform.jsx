@@ -97,7 +97,7 @@ class Classform extends Component {
           type="phone number"
           value={this.state.phonenumber}
           placeholder="PhoneNumber"
-          onChange={this.phonenumberChange}
+          onChange={this.handleChange}
           name="phone number"
           className="phonenumber"
         />
