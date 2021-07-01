@@ -36,14 +36,14 @@ class Classform extends Component {
   render() {
     return (
       <form className="classform-section" onSubmit={this.handleSubmit}>
-        <h1>CLASS COMPONENT FORM</h1>
+        <h1>REACT-CLASS-FORM</h1>
 
         <label htmlFor="name" className="firstname">
           Enter First Name:
         </label>
         <input
           type="text"
-          value={this.state.textvalue}
+          value={this.state.firstname}
           placeholder="First Name"
           onChange={this.inputChange}
           name="name"
@@ -55,7 +55,7 @@ class Classform extends Component {
         </label>
         <input
           type="text"
-          value={this.state.textvalue}
+          value={this.state.surname}
           placeholder="Surname"
           onChange={this.inputChange}
           name="name"
@@ -68,7 +68,7 @@ class Classform extends Component {
         </label>
         <input
           type="email"
-          value={this.state.emailvalue}
+          value={this.state.email}
           placeholder="Email"
           onChange={this.emailChange}
           name="email"
@@ -81,7 +81,7 @@ class Classform extends Component {
         </label>
         <input
           type="password"
-          value={this.state.passwordvalue}
+          value={this.state.password}
           placeholder="Password"
           onChange={this.passwordChange}
           name="password"
@@ -95,7 +95,7 @@ class Classform extends Component {
         </label>
         <input
           type="phone number"
-          value={this.state.phonenumbervalue}
+          value={this.state.phonenumber}
           placeholder="PhoneNumber"
           onChange={this.phonenumberChange}
           name="phone number"
@@ -113,7 +113,7 @@ class Classform extends Component {
           value={this.state.gender}
           onChange={this.handleChange}
         >
-          <option value="select">Select</option>
+          <option value="">Select</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Other</option>
