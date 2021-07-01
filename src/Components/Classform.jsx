@@ -45,7 +45,7 @@ class Classform extends Component {
           type="text"
           value={this.state.firstname}
           placeholder="First Name"
-          onChange={this.inputChange}
+          onChange={this.handleChange}
           name="name"
         />
         <br />
@@ -57,7 +57,7 @@ class Classform extends Component {
           type="text"
           value={this.state.surname}
           placeholder="Surname"
-          onChange={this.inputChange}
+          onChange={this.handleChange}
           name="name"
         />
 
@@ -70,7 +70,7 @@ class Classform extends Component {
           type="email"
           value={this.state.email}
           placeholder="Email"
-          onChange={this.emailChange}
+          onChange={this.handleChange}
           name="email"
         />
 
@@ -83,7 +83,7 @@ class Classform extends Component {
           type="password"
           value={this.state.password}
           placeholder="Password"
-          onChange={this.passwordChange}
+          onChange={this.handleChange}
           name="password"
           className="password"
         />
