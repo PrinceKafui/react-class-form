@@ -9,6 +9,7 @@ class Classform extends Component {
       emailvalue: " ",
       passwordvalue: " ",
       phonenumbervalue: " ",
+      gendervalue: " ",
     };
   }
 
@@ -28,10 +29,15 @@ class Classform extends Component {
     this.setState({ phonenumbervalue: event.target.value });
   };
 
+  genderChange = (event) => {
+    this.setState({ gendervalue: event.target.value });
+  };
+
   handleSubmit = (event) => {
     console.log(this.state.textvalue);
     console.log(this.state.emailvalue);
     console.log(this.state.phonenumbervalue);
+    console.log(this.state.gendervalue);
     console.log(this.state.passwordvalue);
 
     event.preventDefault();
