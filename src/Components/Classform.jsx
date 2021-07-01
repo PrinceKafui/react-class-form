@@ -13,34 +13,23 @@ class Classform extends Component {
     };
   }
 
-  inputChange = (event) => {
-    this.setState({ textvalue: event.target.value });
-  };
-
-  emailChange = (event) => {
-    this.setState({ emailvalue: event.target.value });
-  };
-
-  passwordChange = (event) => {
-    this.setState({ passwordvalue: event.target.value });
-  };
-
-  phonenumberChange = (event) => {
-    this.setState({ phonenumbervalue: event.target.value });
-  };
-
-  genderChange = (event) => {
-    this.setState({ gendervalue: event.target.value });
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
   };
 
   handleSubmit = (event) => {
-    console.log(this.state.textvalue);
-    console.log(this.state.emailvalue);
-    console.log(this.state.phonenumbervalue);
-    console.log(this.state.gendervalue);
-    console.log(this.state.passwordvalue);
-
+    console.log(this.state);
     event.preventDefault();
+    this.setState({
+      firstname: "",
+      surname: "",
+      email: "",
+      password: "",
+      phonenumber: "",
+      gender: "male",
+    });
   };
 
   render() {
@@ -48,7 +37,7 @@ class Classform extends Component {
       <form className="classform-section" onSubmit={this.handleSubmit}>
         <h1>CLASS COMPONENT FORM</h1>
 
-        <label htmlFor="name" className="heading">
+        <label htmlFor="name" className="firstname">
           Enter First Name:
         </label>
         <input
@@ -60,7 +49,20 @@ class Classform extends Component {
         />
         <br />
 
-        <label htmlFor="email" className="heading">
+        <label htmlFor="name" className="surname">
+          Enter Surname:
+        </label>
+        <input
+          type="text"
+          value={this.state.textvalue}
+          placeholder="Surname"
+          onChange={this.inputChange}
+          name="name"
+        />
+
+        <br />
+
+        <label htmlFor="email" className="email">
           Enter Email:
         </label>
         <input
@@ -72,7 +74,8 @@ class Classform extends Component {
         />
 
         <br />
-        <label htmlFor="password" className="heading">
+
+        <label htmlFor="password" className="password">
           Enter Password:
         </label>
         <input
