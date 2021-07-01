@@ -5,7 +5,6 @@ class Classform extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      textvalue: " ",
       firstnamevalue: "",
       surnamevalue: "",
       emailvalue: " ",
