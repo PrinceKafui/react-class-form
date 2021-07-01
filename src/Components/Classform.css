@@ -19,10 +19,6 @@ input {
     min-width: 40%;
 }
 
-.placeholder {
-    text-align: center;
-}
-
 .submit-btn {
     min-width: 10%;
     background-color: blue;

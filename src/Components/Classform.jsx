@@ -80,16 +80,16 @@ class Classform extends Component {
 
         <br />
 
-        <label htmlFor="phone number" className="phone Number">
+        <label htmlFor="phonenumber" className="phoneNumber">
           Enter Phone Number:
         </label>
         <input
           type="phone number"
           value={this.state.phonenumbervalue}
-          placeholder="Phone Number"
+          placeholder="PhoneNumber"
           onChange={this.phonenumberChange}
           name="phone number"
-          className="phone number"
+          className="phonenumber"
         />
 
         <br />
