@@ -5,12 +5,12 @@ class Classform extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstnamevalue: "",
-      surnamevalue: "",
+      firstname: "",
+      surname: "",
       emailvalue: " ",
-      passwordvalue: " ",
-      phonenumbervalue: " ",
-      gendervalue: " ",
+      password: " ",
+      phonenumber: " ",
+      gender: " ",
     };
   }
 
