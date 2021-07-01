@@ -9,7 +9,7 @@ class Classform extends Component {
       surname: "",
       emailvalue: " ",
       password: " ",
-      phonenumber: " ",
+      phonenumbervalue: " ",
       gender: " ",
     };
   }
